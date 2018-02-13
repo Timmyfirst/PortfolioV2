@@ -203,7 +203,12 @@ body {
     padding-top: 10%;
 }
 
+.biopics {
+  border: solid 1px white;
+}
+
 /*////////////////////////////////Autres////////////////////////////////*/
+
 
 .date {
     border-right: dashed 1px #1A8BB2;
@@ -236,6 +241,13 @@ body {
     border: solid #F5F5F5 1px;
     width:auto; height:auto;
     float:left;
+}
+
+.inspi-table {
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 10px;
+    width: 100%;
 }
 
 #arbre {
