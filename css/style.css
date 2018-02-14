@@ -250,6 +250,10 @@ body {
     width: 100%;
 }
 
+.hiden {
+  display: none;
+}
+
 #arbre {
     display:block;
     /*position:absolute;*/

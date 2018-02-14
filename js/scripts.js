@@ -170,17 +170,51 @@ var biopics = document.getElementById('toto');
 biopics.onclick = function() {
 	alert('gogo');
 };*/
-
-var biopics = document.getElementsByClassName('skills-img');
-
-for (var i = 0; i < biopics.length; i++) {
-	biopics[i].onclick = function() {
-		this.classList.add("animated");
-		this.classList.add("flipInY");
-	};
-}
-
 /*
-biopics.onmouseover = function() {
-	biopics.classlist.add("flipInY");
-};*/
+function showstuff(selectedElementClass) {
+
+    var elementClasses = [
+        "Picoas",
+        "Benfica",
+        "Felgueiras",
+        "Maia"
+    ];
+
+    for (var i = 0; i < elementClasses.length; i++) {
+        var elements = document.getElementsByClassName(elementClasses[i]);
+
+        for (var j = 0; j < elements.length; j++) {
+            var element = elements[j];
+            element.style.display = (element.className === selectedElementClass)? "block" : "none";
+        }
+    }
+}*/
+
+var toto = document.getElementsByClassName('toto');
+var tata = document.getElementsByClassName('tata');
+
+for (var i = 0; i < toto.length; i++) {
+	toto[i].onmouseover = function() {
+		var that = this;
+		this.classList.add("animated","flipInX");
+		tata[i].classList.remove("hiden");
+		window.setTimeout(function(){
+        that.classList.remove("animated","flipInX");
+    }, 1000);
+	};
+	/*
+	biopics[i].onmouseout = function() {
+		this.classList.remove("animated");
+		//this.classList.remove("flipInY");
+	};*/
+}
+/*
+for (var i = 0; i < biopics.length; i++) {
+	biopics[i].onmouseover = function() {
+		var that = this;
+		this.classList.add("animated","flipInX");
+		window.setTimeout(function(){
+        that.classList.remove("animated","flipInX");
+    }, 1000);
+	};
+}*/
