@@ -189,10 +189,52 @@ function showstuff(selectedElementClass) {
         }
     }
 }*/
+//.querySelector('')
+//.querySelectorAll('td')
+var pics = document.querySelectorAll('#bio table td');
 
-var toto = document.getElementsByClassName('toto');
-var tata = document.getElementsByClassName('tata');
+for (var i = 0; i < pics.length; i++) {
 
+	pics[i].onmouseover = function() {
+		//alert(div.innerHTML);
+
+		var div = this.querySelector('div');
+		var img = this.querySelector('img');
+
+		//img.classList.add("animated","flipOutX");
+		img.classList.add("hidden");
+		div.classList.remove("hidden");
+
+		//div.classList.add("animated","flipInX");
+		/*
+		window.setTimeout(function(){
+        img.classList.remove("animated","flipOutX");
+				div.classList.remove("animated","flipInX");
+    }, 1000);*/
+
+	};
+	pics[i].onmouseout = function() {
+
+		var div = this.querySelector('div');
+		var img = this.querySelector('img');
+		div.classList.add("hidden");
+		img.classList.remove("hidden");
+
+	};
+}
+
+function flipIn(object) {
+	object.classList.remove("hidden");
+	object.classList.add("animated","flipInX");
+}
+
+function flipOut(object) {
+	object.classList.add("animated","flipInX");
+	object.classList.add("hidden");
+}
+
+
+/*
 for (var i = 0; i < toto.length; i++) {
 	toto[i].onmouseover = function() {
 		var that = this;
@@ -202,13 +244,13 @@ for (var i = 0; i < toto.length; i++) {
         that.classList.remove("animated","flipInX");
     }, 1000);
 	};
-	/*
+
 	biopics[i].onmouseout = function() {
 		this.classList.remove("animated");
 		//this.classList.remove("flipInY");
-	};*/
+	};
 }
-/*
+
 for (var i = 0; i < biopics.length; i++) {
 	biopics[i].onmouseover = function() {
 		var that = this;
