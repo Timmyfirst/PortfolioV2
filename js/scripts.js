@@ -191,7 +191,9 @@ function showstuff(selectedElementClass) {
 }*/
 //.querySelector('')
 //.querySelectorAll('td')
-var pics = document.querySelectorAll('#bio table td');
+/*
+
+var pics = document.querySelectorAll('#bio .conteneur .element');
 
 for (var i = 0; i < pics.length; i++) {
 
@@ -210,7 +212,7 @@ for (var i = 0; i < pics.length; i++) {
 		window.setTimeout(function(){
         img.classList.remove("animated","flipOutX");
 				div.classList.remove("animated","flipInX");
-    }, 1000);*/
+    }, 1000);
 
 	};
 	pics[i].onmouseout = function() {
@@ -221,7 +223,7 @@ for (var i = 0; i < pics.length; i++) {
 		img.classList.remove("hidden");
 
 	};
-}
+}*/
 
 function flipIn(object) {
 	object.classList.remove("hidden");
