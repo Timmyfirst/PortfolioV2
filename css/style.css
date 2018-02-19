@@ -250,18 +250,20 @@ body {
 
 .element {
   border: solid 1px red;
+  width: 320px;
+  height: 320px;
 }
 
 .div-card {
   background-color: blue;
   color: white;
-  width: 200px;
-  height: 200px;
+  /*width: 200px;
+  height: 200px;*/
 }
 
 .img-card {
-  width: 200px;
-  height: 200px;
+  width: 320px;
+  height: 320px;
 }
 
 .hidden {
@@ -346,7 +348,7 @@ body {
 }
 
 .vertical.flip-container .flipper {
-	transform-origin: 100% 213.5px; /* half of height */
+	transform-origin: 100% 160px; /* half of height */
 }
 
 .vertical.flip-container:hover .flipper {
@@ -365,7 +367,7 @@ body {
 
 .flip-container, .front, .back {
 	width: 320px;
-	height: 480px;
+	height: 320px;
 }
 
 /* flip speed goes here */
