@@ -13,7 +13,7 @@ var contentToResize = document.getElementsByClassName("contenu");
 /////////////////////////////////////////////////////////////////BLOC ICONE
 
 icone.onmouseover = function() {
-	
+
 	var entete = document.getElementById('entete');
 	entete.style.display = "block";
 	var icone = document.getElementById('icone');
@@ -22,7 +22,7 @@ icone.onmouseover = function() {
 };
 
 icone.onmouseout = function() {
-	
+
 	var element = document.getElementById('entete');
 	element.style.display = "none";
 	var icone = document.getElementById('icone');
@@ -31,27 +31,26 @@ icone.onmouseout = function() {
 };
 
 icone.onclick = function() {
-	
+
 	cacher();
-	
 
 	var bio = document.getElementById('bio');
 
 	bio.style.display = "block";
-	
+
 };
 
 /////////////////////////////////////////////////////////////////BLOC ENTETE
 
 entete.onmouseover = function() {
-	
+
 	var element = document.getElementById('entete');
 	element.style.display = "block";
 
 };
 
 entete.onmouseout = function() {
-	
+
 	var element = document.getElementById('entete');
 	element.style.display = "none";
 
@@ -69,11 +68,11 @@ carre1.onclick = function() {
 
 carre1.onmouseover = function() {
 	carre1.style.backgroundColor = "#7F7F7F";
-}
+};
 
 carre1.onmouseout = function() {
 	carre1.style.backgroundColor = "#111";
-}
+};
 
 /////////////////////////////////////////////////////////////////BLOC CARRE2
 
@@ -87,11 +86,11 @@ carre2.onclick = function() {
 
 carre2.onmouseover = function() {
 	carre2.style.backgroundColor = "#7F7F7F";
-}
+};
 
 carre2.onmouseout = function() {
 	carre2.style.backgroundColor = "#111";
-}
+};
 
 /////////////////////////////////////////////////////////////////BLOC CARRE3
 
@@ -105,16 +104,16 @@ carre3.onclick = function() {
 
 carre3.onmouseover = function() {
 	carre3.style.backgroundColor = "#7F7F7F";
-}
+};
 
 carre3.onmouseout = function() {
 	carre3.style.backgroundColor = "#111";
-}
+};
 
 /////////////////////////////////////////////////////////////////BLOC CARRE4
 
 carre4.onclick = function() {
-	
+
 	cacher();
 
 	var contacter = document.getElementById('contacter');
@@ -123,11 +122,11 @@ carre4.onclick = function() {
 
 carre4.onmouseover = function() {
 	carre4.style.backgroundColor = "#7F7F7F";
-}
+};
 
 carre4.onmouseout = function() {
 	carre4.style.backgroundColor = "#111";
-}
+};
 
 /////////////////////////////////////////////////////////////////BLOC TEST
 
@@ -146,35 +145,12 @@ function cacher() {
 
 	var contacter = document.getElementById('contacter');
 	contacter.style.display = "none";
-}
+};
 
 /////////////////////////////////////////////////////////////////CANVAS
-
+/*
 var c = document.getElementById("frise-ch");
 var ctx = c.getContext("2d");
-  // Le reste du script ici...
-
-// Voile du bateau
-/*ctx.beginPath();      // Début du chemin
-ctx.moveTo(150,80);   // Le tracé part du point 150,80
-ctx.lineTo(300,230);  // Un segment est ajouté vers 300,230
-ctx.lineTo(150,230);  // Un segment est ajouté vers 150,230
-ctx.closePath();      // Fermeture du chemin
-ctx.fillStyle = "lightblue"; // Définition de la couleur de remplissage
-ctx.fill();           // Remplissage du dernier chemin tracé
-
-// Coque du bâteau
-ctx.beginPath();      // Début d'un autre chemin
-ctx.moveTo(50,250);
-ctx.lineTo(100,300);
-ctx.lineTo(250,300);
-ctx.lineTo(300,250);
-ctx.fillStyle = "peru";
-ctx.strokeStyle = "sienna"; // Définition de la couleur de contour
-ctx.lineWidth = 5;         // Définition de la largeur de ligne
-ctx.fill();            // Application du remplissage
-ctx.stroke();          // Application du contour
-*/
 
 //Mât
 ctx.beginPath();
@@ -184,13 +160,105 @@ ctx.moveTo(250,10);
 ctx.lineTo(250,490);
 ctx.lineWidth = 2;
 
-ctx.stroke();  
+ctx.stroke();*/
 
 
+/////////////////////////////////////////////////////////////////BLOCS bio
+/*
+var biopics = document.getElementById('toto');
 
-/*function infos() {
-	
-	var element = document.getElementById('test');
-	element.style.backgroundColor = "#ff0";
-	//element.style.backgroudnColor = blue;
+biopics.onclick = function() {
+	alert('gogo');
+};*/
+/*
+function showstuff(selectedElementClass) {
+
+    var elementClasses = [
+        "Picoas",
+        "Benfica",
+        "Felgueiras",
+        "Maia"
+    ];
+
+    for (var i = 0; i < elementClasses.length; i++) {
+        var elements = document.getElementsByClassName(elementClasses[i]);
+
+        for (var j = 0; j < elements.length; j++) {
+            var element = elements[j];
+            element.style.display = (element.className === selectedElementClass)? "block" : "none";
+        }
+    }
+}*/
+//.querySelector('')
+//.querySelectorAll('td')
+/*
+
+var pics = document.querySelectorAll('#bio .conteneur .element');
+
+for (var i = 0; i < pics.length; i++) {
+
+	pics[i].onmouseover = function() {
+		//alert(div.innerHTML);
+
+		var div = this.querySelector('div');
+		var img = this.querySelector('img');
+
+		//img.classList.add("animated","flipOutX");
+		img.classList.add("hidden");
+		div.classList.remove("hidden");
+
+		//div.classList.add("animated","flipInX");
+		/*
+		window.setTimeout(function(){
+        img.classList.remove("animated","flipOutX");
+				div.classList.remove("animated","flipInX");
+    }, 1000);
+
+	};
+	pics[i].onmouseout = function() {
+
+		var div = this.querySelector('div');
+		var img = this.querySelector('img');
+		div.classList.add("hidden");
+		img.classList.remove("hidden");
+
+	};
+}*/
+
+function flipIn(object) {
+	object.classList.remove("hidden");
+	object.classList.add("animated","flipInX");
+}
+
+function flipOut(object) {
+	object.classList.add("animated","flipInX");
+	object.classList.add("hidden");
+}
+
+
+/*
+for (var i = 0; i < toto.length; i++) {
+	toto[i].onmouseover = function() {
+		var that = this;
+		this.classList.add("animated","flipInX");
+		tata[i].classList.remove("hiden");
+		window.setTimeout(function(){
+        that.classList.remove("animated","flipInX");
+    }, 1000);
+	};
+
+	biopics[i].onmouseout = function() {
+		this.classList.remove("animated");
+		//this.classList.remove("flipInY");
+	};
+}
+
+for (var i = 0; i < biopics.length; i++) {
+	biopics[i].onmouseover = function() {
+		var that = this;
+		this.classList.add("animated","flipInX");
+		window.setTimeout(function(){
+        that.classList.remove("animated","flipInX");
+    }, 1000);
+	};
 }*/
