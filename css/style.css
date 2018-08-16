@@ -1,6 +1,7 @@
 body {
     background-image: url("../ressources/Images/bg.png");
     overflow-x: hidden;
+    margin: 0px;
 }
 
 /*////////////////////////////////Blocs menus////////////////////////////////*/
@@ -91,6 +92,7 @@ body {
     position: absolute;
     top: 0px;
     left: 42px;
+    right: 42px;
     min-width: 100%;
     max-width: 100%;
     /*min-height: 100%;*/
