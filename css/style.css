@@ -157,6 +157,10 @@ body {
 
 /*////////////////////////////////Elements recursifs////////////////////////////////*/
 
+section {
+  width: 100%;
+}
+
 .titre {
     width: 300px;
     height: 80px;
@@ -203,56 +207,12 @@ body {
     padding-top: 10%;
 }
 
-
-/*////////////////////////////////Autres////////////////////////////////*/
-
-
-.date {
-    border-right: dashed 1px #1A8BB2;
-    border-left: dashed 1px #1A8BB2;
-    border-top: solid 1px #1A8BB2;
-    padding: 10px;
-    text-align: center;
-    width: 10%;
-}
-
-.date-spe {
-    border-right: dashed 1px #1A8BB2;
-    border-left: dashed 1px #1A8BB2;
-    padding: 10px;
-    text-align: center;
-}
-
-.circle-photo {
-    -moz-border-radius:50%;
-    -webkit-border-radius:50%;
-    border-radius:50%;
-}
-
-.circle {
-    -moz-border-radius:50%;
-    -webkit-border-radius:50%;
-    border-radius:50%;
-    margin-left: 36%;
-    padding: 5px;
-    border: solid #F5F5F5 1px;
-    width:auto; height:auto;
-    float:left;
-}
-
-.bio-title {
-  color: #F5F5F5;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 30px;
-  font-size: 22px;
-}
-
 .conteneur {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 40px;
 }
 
 .element {
@@ -285,6 +245,73 @@ body {
     height: 240px;
 }
 
+.year-circle {
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  border-radius:50%;
+  border: solid 1px red;
+  width: 200px;
+}
+
+.for-descript {
+  border: solid 1px blue;
+  width: 600px;
+}
+
+.for-commun {
+  min-height: 200px;
+  text-align: center;
+}
+
+.for-text {
+  display: block;
+  margin-top: 85px;
+  font-size: 22px;
+}
+
+.for-text-with-mini {
+  display: block;
+  margin-top: 40px;
+  font-size: 22px;
+}
+
+.for-mini {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  font-style: italic;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 40px;
+}
+
+/*////////////////////////////////Autres////////////////////////////////*/
+
+.circle-photo {
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+}
+
+.circle {
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+    margin-left: 36%;
+    padding: 5px;
+    border: solid #F5F5F5 1px;
+    width:auto; height:auto;
+    float:left;
+}
+
+.bio-title {
+  color: #F5F5F5;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+
 #arbre {
     display:block;
     /*position:absolute;*/
@@ -310,25 +337,6 @@ body {
     margin-bottom: 60px;
     font-size: 28px;
     color: #F5F5F5;
-}
-
-.for-table {
-    margin: 0 auto;
-}
-
-.for-des {
-  padding: 20px;
-}
-
-.for-int {
-  width: 30%;
-  text-align: right;
-  padding: 20px;
-}
-
-.for-annee {
-  margin-top: 16px;
-  margin-bottom: 16px;
 }
 
 .projects-table {
