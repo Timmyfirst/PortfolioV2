@@ -113,6 +113,8 @@ body {
 .line {
     list-style-type: none;
     font-size: 28px;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 /*////////////////////////////////Blocs de contenu////////////////////////////////*/
@@ -150,9 +152,6 @@ body {
     width: auto;
     height: auto;
     margin: 5px;
-}
-
-.form {
 }
 
 /*////////////////////////////////Elements recursifs////////////////////////////////*/
@@ -345,6 +344,15 @@ section {
     border-spacing: 10px;
 }
 
+.contact-card {
+  display: block;
+  width: 400px;
+  border: solid 1px #F5F5F5;
+  color: #F5F5F5;
+  text-align: center;
+  padding:10px;
+}
+
 .contact-input {
   font-size: 18px;
   padding: 4px;
@@ -356,6 +364,12 @@ section {
   padding: 4px;
   resize: none;
   width: 400px;
+}
+
+#linkedin {
+  margin-top: 10px;
+  width: 200px;
+  height: 61px;
 }
 
 /*////////////////////////////////Animation Card////////////////////////////////*/
@@ -418,4 +432,10 @@ section {
 /* back, initially hidden pane */
 .back {
 	transform: rotateY(180deg);
+}
+
+/*////////////////////////////////Reset CSS////////////////////////////////*/
+
+ul {
+  -webkit-padding-start: 0px;
 }
