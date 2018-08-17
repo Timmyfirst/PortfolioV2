@@ -33,9 +33,16 @@ body {
     left: 40px;
     position:fixed;
     z-index:10;
-    padding-right: 50px;
-    padding-left: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
     border-radius: 0 20px 20px 0;
+}
+
+#entetep {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #F5F5F5;
+  font-weight: bold;
 }
 
 #icone {
@@ -171,7 +178,7 @@ section {
     display: block;
     margin:auto;
     margin-top: 8%;
-    width: 80%;
+    width: 90%;
     height: 100%;
     margin-bottom: 8%;
 }
@@ -295,8 +302,8 @@ section {
     border-radius:50%;
     padding: 5px;
     border: solid #F5F5F5 1px;
-    width:auto;
-    height:auto;
+    width: 206px;
+    height: 206px;
     display: block;
 }
 
