@@ -6,9 +6,6 @@ body {
 
 /*////////////////////////////////Blocs menus////////////////////////////////*/
 
-.carre {
-}
-
 .img-carre {
     margin-left: 4px;
     margin-top: 4px;
@@ -41,7 +38,6 @@ body {
 #entetep {
   margin-top: 10px;
   margin-bottom: 10px;
-  color: #F5F5F5;
   font-weight: bold;
 }
 
@@ -107,7 +103,6 @@ body {
 
 .liste {
     display: inline-block;
-    color: #F5F5F5;
     padding-top:10px;
     padding-bottom:10px;
 }
@@ -141,7 +136,6 @@ body {
 #formations {
     display: none;
     padding-top: 60px;
-    color: #F5F5F5;
 }
 
 #contacter {
@@ -160,6 +154,27 @@ body {
 
 section {
   width: 100%;
+}
+
+.text-color {
+  color: #F5F5F5;
+}
+
+.title {
+  display: block;
+  width: min-content;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 22px;
+  border-bottom: dashed 1px #F5F5F5;
+}
+
+.cadre-opa {
+  background-color: #1f1e209e;
+
 }
 
 .titre {
@@ -185,10 +200,9 @@ section {
 
 .prg {
    padding: 20px;
-   color: #F5F5F5;
 }
 
-.link {
+.link-color {
     text-decoration:none;
     color: #696969;
 }
@@ -307,13 +321,7 @@ section {
     display: block;
 }
 
-.bio-title {
-  color: #F5F5F5;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 30px;
-  font-size: 22px;
-}
+
 
 #arbre {
     display:block;
@@ -334,14 +342,6 @@ section {
     height: 200px;
 }
 
-.skills-tools-title {
-    display: block;
-    margin-top: 50px;
-    margin-bottom: 60px;
-    font-size: 28px;
-    color: #F5F5F5;
-}
-
 .projects-table {
     margin: 0 auto;
     border-collapse: separate;
@@ -352,7 +352,6 @@ section {
   display: block;
   width: 400px;
   border: solid 1px #F5F5F5;
-  color: #F5F5F5;
   text-align: center;
   padding:10px;
 }
