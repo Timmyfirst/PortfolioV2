@@ -14,19 +14,15 @@ var contentToResize = document.getElementsByClassName("contenu");
 
 icone.onmouseover = function() {
 
-	var entete = document.getElementById('entete');
-	entete.style.display = "block";
 	var icone = document.getElementById('icone');
-	icone.style.backgroundColor = "#7F7F7F";
+	icone.style.borderRight = "solid 2px #29262A";
 
 };
 
 icone.onmouseout = function() {
 
-	var element = document.getElementById('entete');
-	element.style.display = "none";
 	var icone = document.getElementById('icone');
-	icone.style.backgroundColor = "#111";
+	icone.style.borderRight = "initial";
 
 };
 
@@ -37,22 +33,6 @@ icone.onclick = function() {
 	var bio = document.getElementById('bio');
 
 	bio.style.display = "block";
-
-};
-
-/////////////////////////////////////////////////////////////////BLOC ENTETE
-
-entete.onmouseover = function() {
-
-	var element = document.getElementById('entete');
-	element.style.display = "block";
-
-};
-
-entete.onmouseout = function() {
-
-	var element = document.getElementById('entete');
-	element.style.display = "none";
 
 };
 
@@ -67,11 +47,11 @@ carre1.onclick = function() {
 };
 
 carre1.onmouseover = function() {
-	carre1.style.backgroundColor = "#7F7F7F";
+	carre1.style.borderRight = "solid 2px #29262A";
 };
 
 carre1.onmouseout = function() {
-	carre1.style.backgroundColor = "#111";
+	carre1.style.borderRight = "initial";
 };
 
 /////////////////////////////////////////////////////////////////BLOC CARRE2
@@ -85,11 +65,11 @@ carre2.onclick = function() {
 };
 
 carre2.onmouseover = function() {
-	carre2.style.backgroundColor = "#7F7F7F";
+	carre2.style.borderRight = "solid 2px #29262A";
 };
 
 carre2.onmouseout = function() {
-	carre2.style.backgroundColor = "#111";
+	carre2.style.borderRight = "initial";
 };
 
 /////////////////////////////////////////////////////////////////BLOC CARRE3
@@ -103,11 +83,11 @@ carre3.onclick = function() {
 };
 
 carre3.onmouseover = function() {
-	carre3.style.backgroundColor = "#7F7F7F";
+	carre3.style.borderRight = "solid 2px #29262A";
 };
 
 carre3.onmouseout = function() {
-	carre3.style.backgroundColor = "#111";
+	carre3.style.borderRight = "initial";
 };
 
 /////////////////////////////////////////////////////////////////BLOC CARRE4
@@ -121,11 +101,11 @@ carre4.onclick = function() {
 };
 
 carre4.onmouseover = function() {
-	carre4.style.backgroundColor = "#7F7F7F";
+	carre4.style.borderRight = "solid 2px #29262A";
 };
 
 carre4.onmouseout = function() {
-	carre4.style.backgroundColor = "#111";
+	carre4.style.borderRight = "initial";
 };
 
 /////////////////////////////////////////////////////////////////BLOC TEST
@@ -147,83 +127,6 @@ function cacher() {
 	contacter.style.display = "none";
 };
 
-/////////////////////////////////////////////////////////////////CANVAS
-/*
-var c = document.getElementById("frise-ch");
-var ctx = c.getContext("2d");
-
-//Mât
-ctx.beginPath();
-ctx.strokeStyle = "red"; // Définition de la couleur de contour
-//bas 2
-ctx.moveTo(250,10);
-ctx.lineTo(250,490);
-ctx.lineWidth = 2;
-
-ctx.stroke();*/
-
-
-/////////////////////////////////////////////////////////////////BLOCS bio
-/*
-var biopics = document.getElementById('toto');
-
-biopics.onclick = function() {
-	alert('gogo');
-};*/
-/*
-function showstuff(selectedElementClass) {
-
-    var elementClasses = [
-        "Picoas",
-        "Benfica",
-        "Felgueiras",
-        "Maia"
-    ];
-
-    for (var i = 0; i < elementClasses.length; i++) {
-        var elements = document.getElementsByClassName(elementClasses[i]);
-
-        for (var j = 0; j < elements.length; j++) {
-            var element = elements[j];
-            element.style.display = (element.className === selectedElementClass)? "block" : "none";
-        }
-    }
-}*/
-//.querySelector('')
-//.querySelectorAll('td')
-/*
-
-var pics = document.querySelectorAll('#bio .conteneur .element');
-
-for (var i = 0; i < pics.length; i++) {
-
-	pics[i].onmouseover = function() {
-		//alert(div.innerHTML);
-
-		var div = this.querySelector('div');
-		var img = this.querySelector('img');
-
-		//img.classList.add("animated","flipOutX");
-		img.classList.add("hidden");
-		div.classList.remove("hidden");
-
-		//div.classList.add("animated","flipInX");
-		/*
-		window.setTimeout(function(){
-        img.classList.remove("animated","flipOutX");
-				div.classList.remove("animated","flipInX");
-    }, 1000);
-
-	};
-	pics[i].onmouseout = function() {
-
-		var div = this.querySelector('div');
-		var img = this.querySelector('img');
-		div.classList.add("hidden");
-		img.classList.remove("hidden");
-
-	};
-}*/
 
 function flipIn(object) {
 	object.classList.remove("hidden");
@@ -234,31 +137,3 @@ function flipOut(object) {
 	object.classList.add("animated","flipInX");
 	object.classList.add("hidden");
 }
-
-
-/*
-for (var i = 0; i < toto.length; i++) {
-	toto[i].onmouseover = function() {
-		var that = this;
-		this.classList.add("animated","flipInX");
-		tata[i].classList.remove("hiden");
-		window.setTimeout(function(){
-        that.classList.remove("animated","flipInX");
-    }, 1000);
-	};
-
-	biopics[i].onmouseout = function() {
-		this.classList.remove("animated");
-		//this.classList.remove("flipInY");
-	};
-}
-
-for (var i = 0; i < biopics.length; i++) {
-	biopics[i].onmouseover = function() {
-		var that = this;
-		this.classList.add("animated","flipInX");
-		window.setTimeout(function(){
-        that.classList.remove("animated","flipInX");
-    }, 1000);
-	};
-}*/
