@@ -330,10 +330,20 @@ section {
     height: 346px;
     z-index: 2;
     position: relative;
-    background-color: #000000bf;
-    opacity: 0.6;
-    color: #FFFFFF;
+    background-color: #29262A;
+    opacity: 0.8;
     visibility: hidden;
+  }
+
+  .pro-descript {
+    display: block;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 22px;
+    color: #FFFFFF;
+    padding-top: 100px;
+    text-align: justify;
   }
 }
 
@@ -359,9 +369,20 @@ section {
     height: 173px;
     z-index: 2;
     position: relative;
-    background-color: #000000bf;
-    opacity: 0.6;
+    background-color: #29262A;
+    opacity: 0.8;
+    visibility: hidden;
+  }
+
+  .pro-descript {
+    display: block;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
     color: #FFFFFF;
+    padding-top: 30px;
+    text-align: justify;
   }
 }
 
