@@ -9,51 +9,32 @@ var carre4 = document.getElementById('carre4');
 var carrehover = document.getElementsByClassName("carre");
 var contentToResize = document.getElementsByClassName("contenu");
 
+var Projets = document.getElementsByClassName('projet');
+
 
 /////////////////////////////////////////////////////////////////BLOC ICONE
 
 icone.onmouseover = function() {
-	
-	var entete = document.getElementById('entete');
-	entete.style.display = "block";
+
 	var icone = document.getElementById('icone');
-	icone.style.backgroundColor = "#7F7F7F";
+	icone.style.borderRight = "solid 2px #29262A";
 
 };
 
 icone.onmouseout = function() {
-	
-	var element = document.getElementById('entete');
-	element.style.display = "none";
+
 	var icone = document.getElementById('icone');
-	icone.style.backgroundColor = "#111";
+	icone.style.borderRight = "initial";
 
 };
 
 icone.onclick = function() {
-	
+
 	cacher();
-	
 
 	var bio = document.getElementById('bio');
 
 	bio.style.display = "block";
-	
-};
-
-/////////////////////////////////////////////////////////////////BLOC ENTETE
-
-entete.onmouseover = function() {
-	
-	var element = document.getElementById('entete');
-	element.style.display = "block";
-
-};
-
-entete.onmouseout = function() {
-	
-	var element = document.getElementById('entete');
-	element.style.display = "none";
 
 };
 
@@ -68,12 +49,12 @@ carre1.onclick = function() {
 };
 
 carre1.onmouseover = function() {
-	carre1.style.backgroundColor = "#7F7F7F";
-}
+	carre1.style.borderRight = "solid 2px #29262A";
+};
 
 carre1.onmouseout = function() {
-	carre1.style.backgroundColor = "#111";
-}
+	carre1.style.borderRight = "initial";
+};
 
 /////////////////////////////////////////////////////////////////BLOC CARRE2
 
@@ -86,12 +67,12 @@ carre2.onclick = function() {
 };
 
 carre2.onmouseover = function() {
-	carre2.style.backgroundColor = "#7F7F7F";
-}
+	carre2.style.borderRight = "solid 2px #29262A";
+};
 
 carre2.onmouseout = function() {
-	carre2.style.backgroundColor = "#111";
-}
+	carre2.style.borderRight = "initial";
+};
 
 /////////////////////////////////////////////////////////////////BLOC CARRE3
 
@@ -104,17 +85,17 @@ carre3.onclick = function() {
 };
 
 carre3.onmouseover = function() {
-	carre3.style.backgroundColor = "#7F7F7F";
-}
+	carre3.style.borderRight = "solid 2px #29262A";
+};
 
 carre3.onmouseout = function() {
-	carre3.style.backgroundColor = "#111";
-}
+	carre3.style.borderRight = "initial";
+};
 
 /////////////////////////////////////////////////////////////////BLOC CARRE4
 
 carre4.onclick = function() {
-	
+
 	cacher();
 
 	var contacter = document.getElementById('contacter');
@@ -122,14 +103,29 @@ carre4.onclick = function() {
 };
 
 carre4.onmouseover = function() {
-	carre4.style.backgroundColor = "#7F7F7F";
-}
+	carre4.style.borderRight = "solid 2px #29262A";
+};
 
 carre4.onmouseout = function() {
-	carre4.style.backgroundColor = "#111";
-}
+	carre4.style.borderRight = "initial";
+};
 
-/////////////////////////////////////////////////////////////////BLOC TEST
+/////////////////////////////////////////////////////////////////PROJECT DIV
+
+
+Array.prototype.forEach.call(Projets, function(element){
+
+		element.onmouseover = function() {
+			madiv = element.getElementsByClassName('text-projet')[0];
+			madiv.style.visibility = "visible";
+		};
+		element.onmouseout = function() {
+			madiv = element.getElementsByClassName('text-projet')[0];
+			madiv.style.visibility = "hidden";
+		};
+});
+
+/////////////////////////////////////////////////////////////////FUNCTIONS
 
 function cacher() {
 	var bio = document.getElementById('bio');
@@ -146,51 +142,15 @@ function cacher() {
 
 	var contacter = document.getElementById('contacter');
 	contacter.style.display = "none";
+};
+
+
+function flipIn(object) {
+	object.classList.remove("hidden");
+	object.classList.add("animated","flipInX");
 }
 
-/////////////////////////////////////////////////////////////////CANVAS
-
-var c = document.getElementById("frise-ch");
-var ctx = c.getContext("2d");
-  // Le reste du script ici...
-
-// Voile du bateau
-/*ctx.beginPath();      // Début du chemin
-ctx.moveTo(150,80);   // Le tracé part du point 150,80
-ctx.lineTo(300,230);  // Un segment est ajouté vers 300,230
-ctx.lineTo(150,230);  // Un segment est ajouté vers 150,230
-ctx.closePath();      // Fermeture du chemin
-ctx.fillStyle = "lightblue"; // Définition de la couleur de remplissage
-ctx.fill();           // Remplissage du dernier chemin tracé
-
-// Coque du bâteau
-ctx.beginPath();      // Début d'un autre chemin
-ctx.moveTo(50,250);
-ctx.lineTo(100,300);
-ctx.lineTo(250,300);
-ctx.lineTo(300,250);
-ctx.fillStyle = "peru";
-ctx.strokeStyle = "sienna"; // Définition de la couleur de contour
-ctx.lineWidth = 5;         // Définition de la largeur de ligne
-ctx.fill();            // Application du remplissage
-ctx.stroke();          // Application du contour
-*/
-
-//Mât
-ctx.beginPath();
-ctx.strokeStyle = "red"; // Définition de la couleur de contour
-//bas 2
-ctx.moveTo(250,10);
-ctx.lineTo(250,490);
-ctx.lineWidth = 2;
-
-ctx.stroke();  
-
-
-
-/*function infos() {
-	
-	var element = document.getElementById('test');
-	element.style.backgroundColor = "#ff0";
-	//element.style.backgroudnColor = blue;
-}*/
+function flipOut(object) {
+	object.classList.add("animated","flipInX");
+	object.classList.add("hidden");
+}
