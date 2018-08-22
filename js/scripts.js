@@ -9,6 +9,8 @@ var carre4 = document.getElementById('carre4');
 var carrehover = document.getElementsByClassName("carre");
 var contentToResize = document.getElementsByClassName("contenu");
 
+var Projets = document.getElementsByClassName('projet');
+
 
 /////////////////////////////////////////////////////////////////BLOC ICONE
 
@@ -108,7 +110,22 @@ carre4.onmouseout = function() {
 	carre4.style.borderRight = "initial";
 };
 
-/////////////////////////////////////////////////////////////////BLOC TEST
+/////////////////////////////////////////////////////////////////PROJECT DIV
+
+
+Array.prototype.forEach.call(Projets, function(element){
+
+		element.onmouseover = function() {
+			madiv = element.getElementsByClassName('text-projet')[0];
+			madiv.style.visibility = "visible";
+		};
+		element.onmouseout = function() {
+			madiv = element.getElementsByClassName('text-projet')[0];
+			madiv.style.visibility = "hidden";
+		};
+});
+
+/////////////////////////////////////////////////////////////////FUNCTIONS
 
 function cacher() {
 	var bio = document.getElementById('bio');
