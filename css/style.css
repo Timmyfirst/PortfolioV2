@@ -150,6 +150,20 @@ section {
   color: #29262A;
 }
 
+/* Bio */
+
+@media only screen and (min-width: 601px) {
+  .prg-bio {
+    width: 480px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .prg-bio {
+    width: 240px;
+  }
+}
+
 @media only screen and (min-width: 601px) {
   .title {
     display: block;
@@ -201,11 +215,6 @@ section {
     -webkit-border-radius: 5px;
     border-radius: 5px;
     box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.7);
-}
-
-.prg {
-    padding: 12px;
-    margin: 20px;
 }
 
 .link-color {
@@ -260,10 +269,33 @@ section {
     height: 200px;*/
 }
 
+@media only screen and (min-width: 601px) {
+  .img-card {
+      height: 240px;
+  }
+
+  .div-card {
+      padding-top: 50px;
+      text-align:center;
+      color: white;
+      font-size: 20px;
+      /*width: 200px;
+      height: 200px;*/
+  }
+}
 
 @media only screen and (max-width: 600px) {
   .img-card {
       height: 120px;
+  }
+
+  .div-card {
+      padding-top: 50px;
+      text-align:center;
+      color: white;
+      font-size: 12px;
+      width: 120px;
+      margin: auto;
   }
 }
 
@@ -274,15 +306,18 @@ section {
   width: 200px;
   min-height: 200px;
   text-align: center;
-  background-color: #333333;
+  background-color: #5EC2ED;
   color: #F5F5F5;
 }
 
 .for-descript {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
   width: 600px;
   min-height: 200px;
   text-align: center;
-  background-color: #333333;
+  background-color: #5EC2ED;
   color: #F5F5F5;
 }
 
@@ -308,6 +343,7 @@ section {
   margin-bottom: 40px;
 }
 
+/* Projet */
 @media only screen and (min-width: 601px) {
   .projet {
     background-color: #e3dfe4;
@@ -487,7 +523,7 @@ section {
 
 @media only screen and (max-width: 600px) {
   .flip-container, .front, .back {
-  	width: 240px;
+  	width: 120px;
       /*width: 100%;*/
   	height: 120px;
   }
